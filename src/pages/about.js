@@ -1,5 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
+import Divider from "@material-ui/core/Divider"
 import Grid from "@material-ui/core/Grid"
 import Collapse from '@material-ui/core/Collapse';
 import List from "@material-ui/core/List"
@@ -11,7 +12,7 @@ import ExpandMore from "@material-ui/icons/ExpandMore"
 
 const useStyles = makeStyles(theme => ({
   holder: {
-    padding: "130px 70px 80px",
+    padding: "150px 70px 0px",
     width: '90%',
     margin: '0 auto'
   },
@@ -23,6 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   option: {
     textAlign: "center",
+    transform: 'translateY(-85px)'
   },
   root: {
     width: "100%",
@@ -183,6 +185,15 @@ const About = () => {
                       ))}
                   </List>
                 </Collapse>
+                {/* <Divider/> */}
+                <hr
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(94, 31, 56, 0), #6f2a46, rgba(94, 31, 56, 0))",
+              width: "80%",
+              margin: "0 auto",
+            }}
+          />
               </>
               // listData.subitems( sub => (
               //     <Collapse in={open} timeout="auto" unmountOnExit>

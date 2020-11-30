@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
         '& h2' : {
             color : 'white',
             marginBottom : 8,
-            fontFamily : 'Roboto Slab'
+            fontFamily : 'Roboto Slab',
+            textAlign: 'center'
         }
     },
 

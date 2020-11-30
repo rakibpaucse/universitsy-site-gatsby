@@ -10,7 +10,7 @@ import EmojiEventsIcon from '@material-ui/icons/EmojiEvents';
 const useStyles = makeStyles((theme) => ({
     featureCards:{
         textAlign : 'center',
-        background : 'antiquewhite',
+        background : '#f5f5dc',
         padding : '25px 0'
     },
 
@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
 
     heading: {
         fontSize : 30,
-        color : 'chocolate'
+        color : 'black'
     },
 
     details : {

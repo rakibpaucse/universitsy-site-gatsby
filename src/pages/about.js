@@ -1,5 +1,9 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
+<<<<<<< HEAD
+=======
+import Divider from "@material-ui/core/Divider"
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
 import Grid from "@material-ui/core/Grid"
 import Collapse from '@material-ui/core/Collapse';
 import List from "@material-ui/core/List"
@@ -11,7 +15,11 @@ import ExpandMore from "@material-ui/icons/ExpandMore"
 
 const useStyles = makeStyles(theme => ({
   holder: {
+<<<<<<< HEAD
     padding: "150px 10px 50px",
+=======
+    padding: "150px 70px 0px",
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
     width: '90%',
     margin: '0 auto'
   },
@@ -23,17 +31,25 @@ const useStyles = makeStyles(theme => ({
   },
   option: {
     textAlign: "center",
+<<<<<<< HEAD
     // transform: 'translateY(-85px)'
+=======
+    transform: 'translateY(-85px)'
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
   },
   root: {
     width: "100%",
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
+<<<<<<< HEAD
 
+=======
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
   },
   nested: {
     paddingLeft: theme.spacing(4),
   },
+<<<<<<< HEAD
   eachSublink : {
       textAlign : 'center',
       color: 'white',
@@ -41,6 +57,8 @@ const useStyles = makeStyles(theme => ({
       padding : 5,
       cursor : 'pointer'
   }
+=======
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
 }))
 
 const listDatas = [
@@ -107,7 +125,11 @@ const About = () => {
 
   return (
     <div>
+<<<<<<< HEAD
       <Grid container spacing={5} className={classes.holder}>
+=======
+      <Grid container spacing={10} className={classes.holder}>
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
         <Grid item xs={8} className={classes.about}>
           <h2 style={{ fontSize: 40, color: "#642941" }}>
             Lets Know About Our Department
@@ -149,6 +171,7 @@ const About = () => {
 
         <Grid item xs={4} className={classes.option}>
           <List className={classes.root}>
+<<<<<<< HEAD
 
             {listDatas.map(listData => (
               <>
@@ -160,20 +183,56 @@ const About = () => {
                     <ExpandMore />
                   )}
                 </ListItem>
+=======
+            {/* <ListItem button onClick={handleClick}>
+                    <ListItemText primary="Inbox" />
+                    {open ? <ExpandLess /> : <ExpandMore />}
+                </ListItem>
+
+                <Collapse in={open} timeout="auto" unmountOnExit>
+                    <List component="div" disablePadding>
+                    <ListItem button className={classes.nested}>
+                        <ListItemText primary="Starred" />
+                    </ListItem>
+                    </List>
+                </Collapse> */}
+
+            {listDatas.map(listData => (
+              <>
+                <ListItem button onClick={handleClick}>
+                  <ListItemText primary={listData.item} />
+                  {listData.subitems && open[listData.item] ? (
+                    <ExpandLess />
+                  ) : (
+                    <ExpandMore />
+                  )}
+                </ListItem>
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
                 <Collapse in={open[listData.item]} timeout="auto" unmountOnExit>
                   <List
                     component="div"
                     disablePadding
                     className={classes.sublink}
+<<<<<<< HEAD
                     style={{ marginLeft: "1rem" , }}
+=======
+                    style={{ marginLeft: "1rem" }}
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
                   >
                     {listData.subitems &&
                       listData.subitems.map(menu => (
                         // <AniLink fade duration={5} to={menu.path}>
+<<<<<<< HEAD
                           <ListItem key={menu} style={{padding:'0px 16px'}}>
                             <ListItemText
                               primary={menu}
                                className={classes.eachSublink}
+=======
+                          <ListItem key={menu}>
+                            <ListItemText
+                              primary={menu}
+                            //   className={classes.sublink}
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
                             />
                           </ListItem>
                         // </AniLink>

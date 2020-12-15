@@ -25,4 +25,9 @@ workbox.precaching.precacheAndRoute(precacheManifest);
 
 workbox.routing.registerRoute(/.*(?:googleapis|gstatic)\.com.*$/, new workbox.strategies.StaleWhileRevalidate({
     cacheName: 'Google-Fonts'
+<<<<<<< HEAD
 }))
+=======
+}))
+
+>>>>>>> 26503aac3ff367c5c4343f6df3da1cda9f7927b6
